@@ -1,0 +1,60 @@
+{
+  "name": "se-2",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "account": "yarn workspace @se-2/hardhat account",
+    "chain": "yarn workspace @se-2/hardhat chain",
+    "compile": "yarn workspace @se-2/hardhat compile",
+    "deploy": "yarn workspace @se-2/hardhat deploy",
+    "flatten": "yarn workspace @se-2/hardhat flatten",
+    "fork": "yarn workspace @se-2/hardhat fork",
+    "format": "yarn next:format && yarn hardhat:format",
+    "generate": "yarn workspace @se-2/hardhat generate",
+    "hardhat-verify": "yarn workspace @se-2/hardhat hardhat-verify",
+    "hardhat:format": "yarn workspace @se-2/hardhat format",
+    "hardhat:lint": "yarn workspace @se-2/hardhat lint",
+    "hardhat:lint-staged": "yarn workspace @se-2/hardhat lint-staged",
+    "hardhat:test": "yarn workspace @se-2/hardhat test",
+    "postinstall": "husky install",
+    "next:build": "yarn workspace @se-2/nextjs build",
+    "next:check-types": "yarn workspace @se-2/nextjs check-types",
+    "next:format": "yarn workspace @se-2/nextjs format",
+    "next:lint": "yarn workspace @se-2/nextjs lint",
+    "next:serve": "yarn workspace @se-2/nextjs serve",
+    "precommit": "lint-staged",
+    "prepare": "install-self-peers -- --ignore-scripts",
+    "start": "yarn workspace @se-2/nextjs dev",
+    "test": "yarn hardhat:test",
+    "vercel": "yarn workspace @se-2/nextjs vercel",
+    "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo",
+    "verify": "yarn workspace @se-2/hardhat verify"
+  },
+  "devDependencies": {
+    "@openzeppelin/hardhat-upgrades": "^3.1.0",
+    "@types/uuid": "^9",
+    "husky": "~8.0.3",
+    "lint-staged": "~13.2.2",
+    "next": "~14.0.4",
+    "vercel": "~32.4.1"
+  },
+  "packageManager": "yarn@3.2.3",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.1.0",
+    "@chainlink/contracts-ccip": "1.4.0",
+    "@lens-protocol/react-web": "^2.2.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@tippyjs/react": "^4.2.6",
+    "@uiw/react-md-editor": "^4.0.4",
+    "react-countdown": "^2.3.5",
+    "uuid": "^9.0.1"
+  }
+}
